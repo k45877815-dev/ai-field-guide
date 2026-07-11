@@ -11,9 +11,34 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://k45877815-dev.github.io/ai-field-guide/compare.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://k45877815-dev.github.io/ai-field-guide/free-tools.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://k45877815-dev.github.io/ai-field-guide/glossary.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://k45877815-dev.github.io/ai-field-guide/blog/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://k45877815-dev.github.io/ai-field-guide/blog/best-ai-tools-for-freelancers.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://k45877815-dev.github.io/ai-field-guide/blog/common-ai-tool-mistakes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://k45877815-dev.github.io/ai-field-guide/blog/how-to-choose-an-ai-writing-tool.html</loc>
