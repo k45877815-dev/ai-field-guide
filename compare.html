@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT vs Claude vs Gemini: Which Should You Actually Use? | AI Field Guide</title>
+<meta name="description" content="An honest, non-hype comparison of ChatGPT, Claude, and Gemini across writing, coding, research, and everyday use — with a simple framework for picking one.">
+<link rel="canonical" href="https://k45877815-dev.github.io/ai-field-guide/compare.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ChatGPT vs Claude vs Gemini: Which Should You Actually Use?">
+<meta property="og:description" content="An honest comparison of the three major AI assistants across writing, coding, research, and everyday use.">
+<meta property="og:url" content="https://k45877815-dev.github.io/ai-field-guide/compare.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2333503B'/%3E%3Cpath d='M10 22 L16 8 L22 22 M12.5 16 H19.5' stroke='%23ECE6D3' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which AI assistant is best for coding?",
+      "acceptedAnswer": { "@type": "Answer", "text": "All three can write and explain code competently, and the practical difference often comes down to how each is integrated into your editor or terminal rather than raw ability. Try the free tier of each on a real task from your own work before committing." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Claude better than ChatGPT?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Neither is universally better — they trade off differently depending on the task, and both improve frequently enough that a comparison can go stale within months. The most reliable approach is testing both on your own real task rather than relying on a general ranking." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to pick just one AI assistant?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. All three offer usable free tiers, and many people keep two open and use whichever responds better for a given task." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#33503B"/><path d="M10 22 L16 8 L22 22 M12.5 16 H19.5" stroke="#ECE6D3" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      AI Field Guide <small>Est. 2026</small>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" id="navToggle">Menu</button>
+    <nav class="primary-nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="tools.html">Directory</a>
+      <a href="compare.html" aria-current="page">Compare</a>
+      <a href="free-tools.html">Free Tools</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="blog/index.html">Field Notes</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <article class="post" style="max-width: 78ch;">
+        <p class="eyebrow">No. 005 — Head-to-head</p>
+        <h1>ChatGPT vs Claude vs Gemini: which should you actually use?</h1>
+        <p class="lede">These three get compared constantly, and most comparisons either turn into a spec-sheet dump or a fan argument. Here's the honest version: what each one is actually built around, where they genuinely differ, and a simple way to decide without needing to trial all three for a month.</p>
+
+        <div class="compare-table-wrap">
+          <table class="compare-table">
+            <thead>
+              <tr><th>Assistant</th><th>Made by</th><th>Known for</th><th>Notable strength</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">ChatGPT</th>
+                <td>OpenAI</td>
+                <td>The most widely adopted general assistant, with a large ecosystem of plugins and custom GPTs</td>
+                <td>Broad ecosystem and integrations — often the first place new AI features appear</td>
+              </tr>
+              <tr>
+                <th scope="row">Claude</th>
+                <td>Anthropic</td>
+                <td>Long-document handling and careful, well-structured writing and coding</td>
+                <td>Strong at working through long files or codebases in one sitting</td>
+              </tr>
+              <tr>
+                <th scope="row">Gemini</th>
+                <td>Google</td>
+                <td>Deep integration across Search, Workspace, and Android</td>
+                <td>Native multimodal input and tight integration if you already live in Google's tools</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:0.85rem; color:var(--ink-soft);">All three companies ship updates frequently, so treat this as a general shape rather than a permanent scoreboard — check each product's own site for its current capabilities before deciding.</p>
+
+        <h2>For writing &amp; drafting</h2>
+        <p>All three can draft an email, an outline, or a first pass at an article competently. The differences show up more in editing behavior than in first drafts: some models lean toward heavier rewriting when asked to "improve" a passage, others stay closer to your original wording. If you have a distinct voice you want preserved, test the same paragraph in each and see which one edits with the lightest touch.</p>
+
+        <h2>For coding</h2>
+        <p>All three can explain, write, and debug code, and the practical difference for most people comes down to how each is integrated into your actual workflow — inside an editor, a terminal, or a plain chat window — rather than which model is "smarter" in the abstract. If you're coding daily, the tool's IDE integration matters more than which chatbot wins a benchmark.</p>
+
+        <h2>For research &amp; fact-finding</h2>
+        <p>This is where it's worth being the most careful with all three: general-purpose assistants can state things confidently that are wrong, especially on fast-moving or very specific topics. For anything you're going to act on, cross-check with a live search or a primary source rather than trusting a single confident-sounding answer — a dedicated answer engine that shows its sources, like the one listed in the <a href="tools.html#research">research family</a> of the directory, is often a safer first stop for fact-finding than a general chatbot.</p>
+
+        <h2>For everyday use</h2>
+        <p>For quick questions, brainstorming, or working through a decision out loud, the differences between all three shrink a lot — this is the category where personal preference in tone and interface probably matters more than capability.</p>
+
+        <h2>A simple way to decide</h2>
+        <ul>
+          <li>Already deep in Google Docs/Sheets/Gmail day to day? Gemini's integration will save you the most friction.</li>
+          <li>Working with long documents, contracts, or large codebases in one sitting? Claude tends to handle that kind of sustained, single-session work well.</li>
+          <li>Want the widest plugin/app ecosystem and the most third-party tools built around it? ChatGPT has the largest surrounding ecosystem right now.</li>
+          <li>Not sure? All three have usable free tiers — see the <a href="free-tools.html">free tools guide</a> and spend twenty minutes running the same real task through each before picking.</li>
+        </ul>
+
+        <h2>Frequently asked</h2>
+        <details class="faq-item">
+          <summary>Which AI assistant is best for coding?</summary>
+          <p class="faq-answer">All three can write and explain code competently. The practical difference usually comes down to editor/terminal integration rather than raw ability — try the free tier of each on a real task from your own work before committing to one.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is Claude better than ChatGPT?</summary>
+          <p class="faq-answer">Neither is universally better. They trade off differently by task, and both change often enough that any fixed ranking goes stale within months. Testing both on your own real task beats trusting a general verdict.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I have to pick just one?</summary>
+          <p class="faq-answer">No — all three currently offer usable free tiers, and plenty of people keep more than one open and use whichever handles a given task better.</p>
+        </details>
+
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>© 2026 AI Field Guide. A personal, independently maintained directory.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tools.html">Directory</a>
+      <a href="compare.html">Compare</a>
+      <a href="free-tools.html">Free Tools</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="blog/index.html">Field Notes</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

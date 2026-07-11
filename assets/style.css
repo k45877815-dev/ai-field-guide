@@ -444,3 +444,110 @@ article.post li { margin-bottom: 0.4em; }
   border-radius: 999px;
   color: var(--ink-soft);
 }
+
+/* ---------------- callout / cross-link box ---------------- */
+.callout {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--ochre);
+  background: var(--paper-card);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius);
+  margin: var(--space-3) 0;
+}
+.callout p { margin: 0; }
+.callout .eyebrow { margin-bottom: 0.3em; }
+
+/* ---------------- comparison table ---------------- */
+.compare-table-wrap { overflow-x: auto; margin: var(--space-3) 0; }
+table.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  min-width: 560px;
+}
+table.compare-table th,
+table.compare-table td {
+  text-align: left;
+  padding: 0.9em 1em;
+  border: 1px solid var(--rule);
+  vertical-align: top;
+}
+table.compare-table thead th {
+  background: var(--forest-dark);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+table.compare-table tbody th {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ochre-dark);
+  background: var(--paper-card);
+  white-space: nowrap;
+}
+table.compare-table tbody tr:nth-child(even) td { background: var(--paper-card); }
+
+/* ---------------- glossary ---------------- */
+.glossary-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin: var(--space-2) 0 var(--space-4);
+}
+.glossary-jump a {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  border: 1px solid var(--rule);
+  padding: 0.4em 0.8em;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--ink-soft);
+}
+.glossary-jump a:hover { border-color: var(--forest-dark); color: var(--forest-dark); }
+
+.glossary-entry {
+  padding: var(--space-2) 0;
+  border-top: 1px solid var(--rule-soft);
+  scroll-margin-top: 90px;
+}
+.glossary-entry:first-of-type { border-top: none; }
+.glossary-entry dt {
+  font-family: var(--display);
+  font-size: 1.2rem;
+  color: var(--forest-dark);
+  font-weight: 600;
+}
+.glossary-entry dd { margin: 0.3em 0 0; color: var(--ink-soft); max-width: 65ch; }
+
+/* ---------------- FAQ accordion ---------------- */
+.faq-item {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--paper-card);
+  margin-bottom: 0.8em;
+  padding: 0;
+}
+.faq-item summary {
+  cursor: pointer;
+  padding: 1em 1.2em;
+  font-family: var(--body);
+  font-weight: 600;
+  color: var(--forest-dark);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  font-family: var(--mono);
+  color: var(--ochre-dark);
+  flex: none;
+}
+.faq-item[open] summary::after { content: "–"; }
+.faq-item .faq-answer { padding: 0 1.2em 1.1em; color: var(--ink-soft); margin: 0; }

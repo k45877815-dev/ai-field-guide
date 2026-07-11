@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Glossary: Plain-English Definitions | AI Field Guide</title>
+<meta name="description" content="Plain-English definitions of common AI terms — token, hallucination, context window, RAG, fine-tuning, and more — explained without the jargon.">
+<link rel="canonical" href="https://k45877815-dev.github.io/ai-field-guide/glossary.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI Glossary: Plain-English Definitions">
+<meta property="og:description" content="Common AI terms explained without the jargon — token, hallucination, context window, RAG, and more.">
+<meta property="og:url" content="https://k45877815-dev.github.io/ai-field-guide/glossary.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2333503B'/%3E%3Cpath d='M10 22 L16 8 L22 22 M12.5 16 H19.5' stroke='%23ECE6D3' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "name": "AI Glossary",
+  "description": "Plain-English definitions of common AI terminology."
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#33503B"/><path d="M10 22 L16 8 L22 22 M12.5 16 H19.5" stroke="#ECE6D3" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      AI Field Guide <small>Est. 2026</small>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" id="navToggle">Menu</button>
+    <nav class="primary-nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="tools.html">Directory</a>
+      <a href="compare.html">Compare</a>
+      <a href="free-tools.html">Free Tools</a>
+      <a href="glossary.html" aria-current="page">Glossary</a>
+      <a href="blog/index.html">Field Notes</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">No. 007 — Reference</p>
+      <h1>AI glossary, in plain English</h1>
+      <p class="lede">The terms that get thrown around in every AI product page and news article, defined without circular jargon. Jump to one, or read top to bottom.</p>
+
+      <div class="glossary-jump">
+        <a href="#llm">LLM</a>
+        <a href="#token">Token</a>
+        <a href="#prompt">Prompt</a>
+        <a href="#context-window">Context window</a>
+        <a href="#hallucination">Hallucination</a>
+        <a href="#fine-tuning">Fine-tuning</a>
+        <a href="#rag">RAG</a>
+        <a href="#agent">Agent</a>
+        <a href="#multimodal">Multimodal</a>
+        <a href="#temperature">Temperature</a>
+        <a href="#system-prompt">System prompt</a>
+        <a href="#parameters">Parameters</a>
+      </div>
+
+      <dl>
+        <div class="glossary-entry" id="llm">
+          <dt>LLM (Large Language Model)</dt>
+          <dd>The type of AI model behind tools like ChatGPT, Claude, and Gemini. It's trained on huge amounts of text to predict what word (or piece of a word) is likely to come next, and that simple mechanism, at large enough scale, produces the fluent, useful text these tools generate.</dd>
+        </div>
+        <div class="glossary-entry" id="token">
+          <dt>Token</dt>
+          <dd>The small chunk of text a model actually processes — often a word, part of a word, or a punctuation mark. Models read and generate text one token at a time, and usage limits/pricing are often measured in tokens rather than words.</dd>
+        </div>
+        <div class="glossary-entry" id="prompt">
+          <dt>Prompt</dt>
+          <dd>The input you give a model — a question, instruction, or piece of text you want it to work with. "Prompt engineering" just means writing that input more clearly and specifically to get a better result.</dd>
+        </div>
+        <div class="glossary-entry" id="context-window">
+          <dt>Context window</dt>
+          <dd>The amount of text a model can "see" and reference at once, including your current prompt plus recent conversation history or an attached document. Ask something that refers back to a point far outside that window, and the model genuinely won't have access to it anymore.</dd>
+        </div>
+        <div class="glossary-entry" id="hallucination">
+          <dt>Hallucination</dt>
+          <dd>When a model states something false or made-up with the same fluent confidence as something true — a fabricated statistic, a citation that doesn't exist, or a wrong fact. It's a known limitation of how these models generate text, which is why fact-checking matters most on anything you didn't already know the answer to.</dd>
+        </div>
+        <div class="glossary-entry" id="fine-tuning">
+          <dt>Fine-tuning</dt>
+          <dd>Taking an already-trained model and further training it on a narrower, specific dataset so it performs better on a particular task or in a particular style — for example, a customer-support tone or a specific technical domain.</dd>
+        </div>
+        <div class="glossary-entry" id="rag">
+          <dt>RAG (Retrieval-Augmented Generation)</dt>
+          <dd>A technique where a model looks up relevant information from an outside source — a document, database, or the web — before generating its answer, rather than relying only on what it learned during training. This is part of how tools like Perplexity ground answers in current, citable sources.</dd>
+        </div>
+        <div class="glossary-entry" id="agent">
+          <dt>Agent / agentic</dt>
+          <dd>A step beyond a simple chatbot: an AI system that can take multiple actions on its own toward a goal — running code, browsing, calling other tools — rather than just replying to one prompt at a time. Coding tools like Replit Agent fall into this category.</dd>
+        </div>
+        <div class="glossary-entry" id="multimodal">
+          <dt>Multimodal</dt>
+          <dd>A model that can work with more than just text — understanding or generating images, audio, or video in addition to written language, rather than being limited to a single format.</dd>
+        </div>
+        <div class="glossary-entry" id="temperature">
+          <dt>Temperature</dt>
+          <dd>A setting (mostly used by developers via an API, less often in consumer apps) that controls how predictable versus varied a model's output is. Lower temperature gives more consistent, conservative answers; higher temperature gives more varied, sometimes more creative — but also less predictable — output.</dd>
+        </div>
+        <div class="glossary-entry" id="system-prompt">
+          <dt>System prompt</dt>
+          <dd>Background instructions given to a model before your conversation starts, usually invisible to you, that shape its behavior, tone, or rules — for example, telling it what role to play or what it shouldn't do.</dd>
+        </div>
+        <div class="glossary-entry" id="parameters">
+          <dt>Parameters</dt>
+          <dd>The internal numerical values a model learns during training that determine how it processes input and produces output. "Parameter count" is often used as a rough (and imperfect) proxy for a model's scale — more parameters doesn't automatically mean better in every task.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>© 2026 AI Field Guide. A personal, independently maintained directory.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tools.html">Directory</a>
+      <a href="compare.html">Compare</a>
+      <a href="free-tools.html">Free Tools</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="blog/index.html">Field Notes</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
